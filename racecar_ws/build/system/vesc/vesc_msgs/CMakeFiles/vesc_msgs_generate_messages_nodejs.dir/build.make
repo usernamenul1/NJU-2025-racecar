@@ -64,8 +64,8 @@ system/vesc/vesc_msgs/CMakeFiles/vesc_msgs_generate_messages_nodejs: /home/ni/De
 
 /home/ni/Desktop/myracecar/racecar_ws/devel/share/gennodejs/ros/vesc_msgs/msg/VescStateStamped.js: /opt/ros/noetic/lib/gennodejs/gen_nodejs.py
 /home/ni/Desktop/myracecar/racecar_ws/devel/share/gennodejs/ros/vesc_msgs/msg/VescStateStamped.js: /home/ni/Desktop/myracecar/racecar_ws/src/system/vesc/vesc_msgs/msg/VescStateStamped.msg
-/home/ni/Desktop/myracecar/racecar_ws/devel/share/gennodejs/ros/vesc_msgs/msg/VescStateStamped.js: /home/ni/Desktop/myracecar/racecar_ws/src/system/vesc/vesc_msgs/msg/VescState.msg
 /home/ni/Desktop/myracecar/racecar_ws/devel/share/gennodejs/ros/vesc_msgs/msg/VescStateStamped.js: /opt/ros/noetic/share/std_msgs/msg/Header.msg
+/home/ni/Desktop/myracecar/racecar_ws/devel/share/gennodejs/ros/vesc_msgs/msg/VescStateStamped.js: /home/ni/Desktop/myracecar/racecar_ws/src/system/vesc/vesc_msgs/msg/VescState.msg
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/ni/Desktop/myracecar/racecar_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating Javascript code from vesc_msgs/VescStateStamped.msg"
 	cd /home/ni/Desktop/myracecar/racecar_ws/build/system/vesc/vesc_msgs && ../../../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/gennodejs/cmake/../../../lib/gennodejs/gen_nodejs.py /home/ni/Desktop/myracecar/racecar_ws/src/system/vesc/vesc_msgs/msg/VescStateStamped.msg -Ivesc_msgs:/home/ni/Desktop/myracecar/racecar_ws/src/system/vesc/vesc_msgs/msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -p vesc_msgs -o /home/ni/Desktop/myracecar/racecar_ws/devel/share/gennodejs/ros/vesc_msgs/msg
 

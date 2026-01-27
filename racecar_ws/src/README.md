@@ -1,6 +1,4 @@
-# 智能车仿真 (ROS Noetic版本)
-
-本项目已从ROS Kinetic迁移到ROS Noetic (Ubuntu 20.04)。
+# 智能车仿真
 
 ## 环境要求
 - Ubuntu 20.04 LTS
@@ -96,46 +94,3 @@ roslaunch racecar_gazebo racecar_rviz.launch
 3. 在RViz中使用"2D Nav Goal"工具（工具栏中的箭头图标）
 4. 在地图上点击并拖动设置目标位置和朝向
 5. 小车会自动规划路径并导航到目标点
-
-## ROS Kinetic到Noetic的主要变更
-
-1. **Python版本**: 从Python 2升级到Python 3
-   - 所有Python脚本shebang改为 `#!/usr/bin/env python3`
-   - `Tkinter` 改为 `tkinter`
-   - `print` 语句改为 `print()` 函数
-   - 整数除法 `/` 改为 `//`
-
-2. **CMakeLists.txt**: 
-   - `cmake_minimum_required(VERSION 2.8.3)` 改为 `cmake_minimum_required(VERSION 3.0.2)`
-
-3. **package.xml**: 
-   - 使用 format 2 (`<package format="2">`)
-   - `run_depend` 改为 `exec_depend`
-
-4. **OpenCV**: 
-   - 移除了固定的OpenCV路径设置
-   - 使用系统OpenCV (`find_package(OpenCV REQUIRED)`)
-   - 头文件从 `<opencv/highgui.h>` 改为 `<opencv2/highgui.hpp>`
-
-5. **不兼容的包**: 
-   - `hokuyo_node` 已禁用（依赖已废弃的driver_base包）
-   - 仿真中使用Gazebo的激光雷达插件替代
-
-## 故障排查
-
-### 报错找不到Python脚本节点
-确保脚本有执行权限：
-```bash
-chmod +x ~/Desktop/myracecar/racecar_ws/src/racecar_gazebo/scripts/*.py
-chmod +x ~/Desktop/myracecar/racecar_ws/src/racecar_control/scripts/*.py
-```
-
-### 报错找不到控制器类型
-安装effort_controllers：
-```bash
-sudo apt-get install ros-noetic-effort-controllers
-```
-
-## 参考教程
-原始代码使用参考教程：[教程地址](https://www.guyuehome.com/6463)
-
